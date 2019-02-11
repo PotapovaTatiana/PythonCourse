@@ -55,14 +55,14 @@ class shuffler:
 # Методы внутри класса разделяются одной строкой.
 
 
-# Не хватает 4 отступа для всего абзаца.
+# Не хватает 4 отступов для всего абзаца.
 def parse_arguments():
     parser = argparse.ArgumentParser()
-# Превышена допустимая длинная строки, требуется перенос.    
+# Превышена допустимая длина строки, требуется перенос.    
     subparsers = parser.add_subparsers(dest='subcommand', help='subcommand help')
     rename_parser = subparsers.add_parser('rename', help='rename help')
     rename_parser.add_argument('dirname')
-# Превышена допустимая длинная строки, требуется перенос.    
+# Превышена допустимая длина строки, требуется перенос.    
     rename_parser.add_argument('-o', '--output', help='path to a file where restore map is stored')
     restore_parser = subparsers.add_parser('restore', help="command_a help")
     restore_parser.add_argument('dirname')
